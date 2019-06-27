@@ -9,7 +9,7 @@ kubectl apply -f nginx-service.yaml
 ```
 
 # How to access to containers in pods
-kubectl exec -it <pod name> -c <cnotainer name>
+kubectl exec -it podname -c containername
 
 
 # Clean
