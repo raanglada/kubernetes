@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test2-ingress-nginx
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: probando.com
+    http:
+     paths:
+      - path: /apple
+        backend: 
+          serviceName: apple-service
+          servicePort: 80
+    
+  - host: pepe.org
+    http:
+      paths:
+        - path: /banana
+          backend:
+            serviceName: banana-service
+            servicePort: 80
