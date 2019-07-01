@@ -1,0 +1,15 @@
+
+#create a persistent volume with default provider of storageClass
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv1
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: default
+  hostPath:
+    path: "/mnt/data"

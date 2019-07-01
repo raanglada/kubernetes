@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service
-  labels:
-    run: nginx-service
+  name: nginx-service-1  
 spec:
   type: NodePort
+
+  #maapting port
   ports:
-  - port: 80        
+  - port: 80
+
+  #send traffic to pods that matching this label selector  
   selector:
-    deploy: nginx-deploy    
+    app: nginx

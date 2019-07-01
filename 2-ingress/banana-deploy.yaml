@@ -1,9 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: banana-deployment
-  labels:
-    deploy: deploy-banana
+  name: banana-deployment  
 spec:
   replicas: 1
   selector:

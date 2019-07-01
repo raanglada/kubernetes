@@ -5,13 +5,17 @@ metadata:
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
-  rules:
+  rules:  
   - host: probando.com
     http:
      paths:
       - path: /apple
         backend: 
           serviceName: apple-service
+          servicePort: 80
+      - path: /pvc
+        backend:
+          serviceName: nginx-service-stafull
           servicePort: 80
     
   - host: pepe.org

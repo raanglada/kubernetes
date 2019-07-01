@@ -1,18 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: multicontainer-deployment
-  labels:
-    deploy: multicontainer-deploy
+  name: multicontainer-deployment  
 spec:
   replicas: 1
   selector:
     matchLabels:
-      test: multicon
+      app: test-multicon
   template:
     metadata:
       labels:
-        test: multicon
+        app: test-multicon
     spec:
       containers:
       - name: debian-container
@@ -22,6 +20,7 @@ spec:
          - while true; do            
             sleep 1;
            done
+    
       - name: nginx
         image: nginx:latest      
   
