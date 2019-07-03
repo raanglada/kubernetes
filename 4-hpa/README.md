@@ -1,4 +1,4 @@
-#Install metrics-server
+# Install metrics-server
 
 - Clone the project 
 ```
