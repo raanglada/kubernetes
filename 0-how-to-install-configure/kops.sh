@@ -3,7 +3,7 @@
 #dependencies
 # sudo apt update
 # sudo apt install python-pip curl -y
-# pip install awscli --user
+# pip install awscli
 # aws --version
 
 #install

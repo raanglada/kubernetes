@@ -20,7 +20,7 @@ export KOPS_CLUSTER_NAME=$cluster_name
 export KOPS_STATE_STORE=s3://${bucket_name}
 
 #generate key
-#ssh-keygen -t rsa -b 4096 -C "test@test.com"
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 
 kops create cluster \
 --master-size=${master_size} \
