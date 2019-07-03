@@ -13,7 +13,7 @@ pipeline {
             sh 'mkdir -p /opt/kops/'
             sh 'rm -rf /opt/kops/*'
             sh 'cp env.sh /opt/kops/'
-            sh 'bash -v kops-test.sh'          
+            sh 'bash -v kops-up.sh'          
         }
     }
 
