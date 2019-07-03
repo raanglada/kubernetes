@@ -1,5 +1,5 @@
 # Introduction
-In this repo you will find basic examples to start with Kubernetes. You will fin also basic bash script to install other tools like kops. A very basic Jenkinsfile pipeline was added if you want to integrate the examples over a ci/cd process.
+In this repo you will find basic examples to start with Kubernetes. You will fin also basic bash script to install tools like kops and kubectl. A very basic Jenkinsfile pipeline was added if you want to integrate the examples with a ci/cd process.
 
 # Content
 - 0-how-to-install-configure: you will find basic bash scripts to install and configure tools like helm, kops. kubectl and others
