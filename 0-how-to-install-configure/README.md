@@ -3,4 +3,4 @@ Basic scrips in bash for installing:
 - helm
 - kubectl 
 - nginx-ingress
-- 
+
