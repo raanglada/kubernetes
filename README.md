@@ -28,7 +28,10 @@ cluster_name=test.k8s.local
 export KOPS_CLUSTER_NAME=$cluster_name
 export KOPS_STATE_STORE=s3://${bucket_name}
 ```
- 
+- use the script set-local-kubectl-config.sh to set locally the access to the k8s cluster with kubectl
+```
+$ . set-local-kubectl-config.sh
+```
 
 
 
