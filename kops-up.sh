@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-#aws configure
-#or instance profile in the EC2
+# #aws configure
+# #or instance profile in the EC2
 
 . env.sh
 
@@ -23,7 +23,7 @@ kops create secret --name $cluster_name sshpublickey admin -i ~/.ssh/id_rsa.pub
 
 kops update cluster --name ${KOPS_CLUSTER_NAME} --yes
 
-aws s3 cp ~/.kube/config s3://${KOPS_STATE_STORE}/
+aws s3 cp ~/.kube/config ${KOPS_STATE_STORE}/
 
 #check if cluster is ready
 #kops validate cluster
