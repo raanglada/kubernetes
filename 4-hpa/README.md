@@ -23,13 +23,13 @@ kubectl apply -f metrics-server/deploy/1.8+/
 
 - Check metric server is working
 ```
-kubectl to nodes
+kubectl top nodes
 ```
 
 - test horizontal pod autoscaler
 
 ```
-kubectl apply -f hpa1
+kubectl apply -f hpa1.yaml
 ```
 
 - see the number of pods of target in the hpa is according to the minReplicas value
