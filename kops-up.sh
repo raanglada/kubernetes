@@ -10,6 +10,7 @@
 aws s3api put-bucket-versioning --bucket ${bucket_name} --versioning-configuration Status=Enabled
 
 #generate key
+rm -rf ~/.ssh/id_rsa
 ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 
 kops create cluster \
@@ -22,8 +23,6 @@ kops create cluster \
 kops create secret --name $cluster_name sshpublickey admin -i ~/.ssh/id_rsa.pub
 
 kops update cluster --name ${KOPS_CLUSTER_NAME} --yes
-
-aws s3 cp ~/.kube/config ${KOPS_STATE_STORE}/
 
 #check if cluster is ready
 #kops validate cluster
