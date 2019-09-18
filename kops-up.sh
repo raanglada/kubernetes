@@ -24,7 +24,7 @@ kops create secret --name $cluster_name sshpublickey admin -i ~/.ssh/id_rsa.pub
 
 kops update cluster --name ${KOPS_CLUSTER_NAME} --yes
 
-aws s3 cp ~/.ssh/id_rsa.pub $KOPS_STATE_STORE
+aws s3 cp ~/.ssh/id_rsa $KOPS_STATE_STORE
 
 #check if cluster is ready
 #kops validate cluster
