@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
 #how to install helm
-#curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > install-helm.sh
-#chmod u+x install-helm.sh
-#mv to /usr/local/bin/helm
+curl -L https://git.io/get_helm.sh | bash
+helm init
+helm update
 
 #configure and initiate
 kubectl create serviceaccount --namespace kube-system tiller
