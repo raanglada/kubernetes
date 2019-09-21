@@ -17,7 +17,7 @@ kubectl apply -f ingress2.yaml
 
 # Brief explanation
 - The ingress controller implements the concept of routing applying rules
-- You have in the example to services running: apple and banana
+- You have in the example two services running: apple and banana
 - In ingress1.yaml lets you route by path
 - In ingress2.yaml lets you route by domain and path
     - In this example, after you have installed ingress, take the domain name of the ingress created(it's a classic load balancer in AWS), 
