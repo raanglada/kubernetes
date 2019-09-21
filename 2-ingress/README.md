@@ -7,7 +7,7 @@ helm install stable/nginx-ingress --name nginx-test
 # Test
 ```
 kubectl apply -f apple-deploy.yaml
-kubectl apply -f deploy-deploy.yaml
+kubectl apply -f banana-deploy.yaml
 kubectl apply -f apple-Service.yaml
 kubectl apply -f banana-Service.yaml
 kubectl apply -f ingress1.yaml
